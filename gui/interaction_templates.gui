@@ -1289,6 +1289,7 @@ types CharacterInteraction
 
 		widget = {
 			name = "answer_chance"
+			tooltip_enabled = no
 			size = { 330 60 }
 			tooltip = "[CharacterInteractionConfirmationWindow.GetAnswerReason]"
 
@@ -1342,6 +1343,7 @@ types CharacterInteraction
 				}
 
 				text_single = {
+					visible = no
 					layoutpolicy_horizontal = expanding
 					visible = "[And( Not( CharacterInteractionConfirmationWindow.IsAiMaybe ), Not( CharacterInteractionConfirmationWindow.GetRecipient.IsPlayer ) )]"
 					name = "answer_score"
